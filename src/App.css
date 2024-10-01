@@ -12,7 +12,7 @@
 /*-------------
 NAV BAR STYLING
 --------------*/
-.menubar {
+.menubar{
     position: fixed;
     z-index: 10;
     top: 0;
@@ -24,23 +24,23 @@ NAV BAR STYLING
     align-items: center;
     list-style:none;
 }
-.menubar .mobile-nav {
-    display: none;
-}
-.menubar li {
+
+.menubar  li {
     padding: 0 20px;
-    display: flex;
     height: 100%;
-    align-items: center;
 }
 
-.menubar li a{
+nav li a{
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
     text-transform: capitalize;
+    align-items: center;
     color: white;
     text-decoration: none;
 }
 
-nav li:first-child{  
+.menubar li:first-child{  
     margin-right: auto;
 }
 
@@ -49,6 +49,47 @@ nav li:hover{
 }
 nav li:first-child{
     background: none;
+}
+.menubtn {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none !important;
+}
+
+nav .sidebar{
+    height: 100vh;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #065371;
+    z-index: 99;
+    box-shadow: -5px 0px 10px rgb(34, 34, 34);
+    display: flex;
+    backdrop-filter: blur(10px);
+    justify-content: flex-start !important;
+    align-items: flex-end !important;
+    flex-direction: column;
+} 
+
+.sidebar li:first-child {
+    justify-self: flex-end !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.sidebar li{
+    list-style: none;
+    padding-left: 1em;
+    height: 50px;
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    justify-content: flex-start;
 }
 /* -----------------
 HOME PAGE STYLING

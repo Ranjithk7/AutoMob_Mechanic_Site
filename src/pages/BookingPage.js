@@ -12,18 +12,18 @@ const BookingPage = () => {
       <div className="form">
       <form onSubmit={() => navigate('/success')}>
             <div>
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input type="text" id="name" name="fullname" required spellCheck="false" />
             </div>
             <div>
-              <label for="email">Email Id</label>
+              <label htmlFor="email">Email Id</label>
               <input type="email" id="email" name="emailid" required />
             </div>
             <div className="mobile">
-            <label for="mobile">Phone Number</label>
+            <label htmlFor="mobile">Phone Number</label>
                 <div className="code">
                   <select name="countrycode" id="code" required>
-                    <option selected hidden value="">Code</option>
+                    <option selected hidden>Code</option>
                     <option value="+91">+91</option>
                     <option value="+78">+78</option>
                     <option value="+55">+55</option>
@@ -32,7 +32,7 @@ const BookingPage = () => {
                 </div>
             </div>
             <div>
-            <label for="service">Select Service</label>
+            <label htmlFor="service">Select Service</label>
             <select name="services" id="service" required>
                 <option selected hidden value="">--Select Service--</option>
                 <option value="car care">Car Care Service</option>
@@ -40,22 +40,22 @@ const BookingPage = () => {
                 <option value="body repair">Body Repair Service</option></select>
             </div>
             <div>
-            <label for="manufacturer">Car Make</label>
+            <label htmlFor="manufacturer">Car Make</label>
             <input type="text" id="manufacturer" name="make" required />
             </div>
             <div>
-            <label for="model">Car Model</label>
+            <label htmlFor="model">Car Model</label>
             <input type="text" id="model" name="model" required />
             </div>
             <div className="fuel">
-              <label for="fuel">Fuel Type</label>
-              <input type="radio" id="petrol" name="fuel" value="petrol" /><label for="petrol">Petrol</label>
-              <input type="radio" id="diesel" name="fuel" value="diesel" /><label for="diesel">Diesel</label>
-              <input type="radio" id="lpg" name="fuel" value="lpg" /><label for="lpg">LPG</label>
-              <input type="radio" id="other" name="fuel" value="others" /><label for="other">Others</label>
+              <label htmlFor="fuel">Fuel Type</label>
+              <input type="radio" id="petrol" name="fuel" value="petrol" /><label htmlFor="petrol">Petrol</label>
+              <input type="radio" id="diesel" name="fuel" value="diesel" /><label htmlFor="diesel">Diesel</label>
+              <input type="radio" id="lpg" name="fuel" value="lpg" /><label htmlFor="lpg">LPG</label>
+              <input type="radio" id="other" name="fuel" value="others" /><label htmlFor="other">Others</label>
             </div>
             <div>
-            <label for="km">Kilometer Ran</label>
+            <label htmlFor="km">Kilometer Ran</label>
             <input type="number" id="km" name="Kilometer"/>
             </div>
             <div className='submit-btn'>
