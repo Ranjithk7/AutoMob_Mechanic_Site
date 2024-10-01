@@ -8,6 +8,7 @@ const Nav = () => {
             <li><Link to='/booking'>Booking</Link></li>
             <li><Link to='mailto:contact@automob.co.in'>contact@automob.co.in &#x2709;</Link></li>
             <li><Link to='tel:999 999 9999'>999 999 9999 &#x260E;</Link></li>
+            <li className="mobile-nav"><Link to='/'>Nav</Link></li>
         </nav>
     );
 }

@@ -13,6 +13,9 @@
 NAV BAR STYLING
 --------------*/
 .menubar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
     width: 100%;
     height: 8vh;
     background-color: #065371;
@@ -21,11 +24,13 @@ NAV BAR STYLING
     align-items: center;
     list-style:none;
 }
-
+.menubar .mobile-nav {
+    display: none;
+}
 .menubar li {
     padding: 0 20px;
-    height: 100%;
     display: flex;
+    height: 100%;
     align-items: center;
 }
 
@@ -160,7 +165,7 @@ SERVICE LIST PAGE PAGE STYLING
 .title {
     text-align: center;
     width: 90%;
-    margin: 40px auto;
+    margin: 9vh auto;
     line-height: 1.5;
 }
 .title h1 {
@@ -201,7 +206,7 @@ SERVICE PAGE STYLING
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 86vh;
+    height: 100vh;
 }
 .container{
     background-color: white;
@@ -280,67 +285,57 @@ SERVICE PAGE STYLING
 /* -----------------
 BOOKING PAGE STYLING
 ----------------- */
-@media(max-width: 500px){
-    .form-img {
-        display: none;
-    }
 
-}
 h2{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 3em;
     text-decoration:3px underline #065371 ;
 }
 h2 span{
     color: #F5496C;
 }
 .form-container{
-    margin: 0 auto;    
+    margin: 1.5em auto;    
     max-width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+form {
+    width: 100%;
+    display: grid;
+    grid-gap: .5em;
+}
+.form-img {
+    width: 40%;
+    display: grid;
+    place-items: center;
 }
 .form {
     width: 55%;
 }
-.form-img {
-    width: 45%;
+.code {
     display: grid;
-    place-items: center;
+    grid-template-columns: 4.5em auto;
+    grid-gap: .5em;
 }
 
- .form input,select:focus{
+.form input:focus,select:focus{
     outline:none !important;
 }
-.form div{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-.form .fuel {
-    flex-direction: row;
+.form select {
+    background: none;
 }
 .form input[type=radio]{
     margin-left: 15px;
 }
+
 .form input[type=text],input[type=email],select,input[type=number]{
     width: 100%;
     height: 27px;
     border-radius: 5px;
     border: 1px solid rgb(135, 131, 131);
 
-}
-div .code {
-    display: flex;
-    flex-direction: row;
-}
-#code {
-    width: 15%  ;
-}
-#mobile{
-    width: 85%;
 }
 .submit-btn {
     display: flex;
@@ -382,12 +377,14 @@ SUCCESS PAGE STYLING
 FOOTER STYLING
 ----------------- */
 footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     background-color:#065371; 
     color: white;
     height: 6vh;
     text-transform: capitalize;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    
 }

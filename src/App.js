@@ -1,4 +1,5 @@
 import './App.css';
+import './queries.css'
 import Nav from './Nav';
 import HomePage from './pages/HomePage';
 import ServiceListPage from './pages/ServiceListPage';
