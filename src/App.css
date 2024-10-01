@@ -56,7 +56,7 @@ HOME PAGE STYLING
 .bg-image{
     background-image: url(./images/home1.jpg);
     width: 100%;
-    height: 86vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     position: relative;
